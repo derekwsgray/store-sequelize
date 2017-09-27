@@ -1,32 +1,33 @@
-[![Coverage Status](https://coveralls.io/repos/holidayextras/jsonapi-store-relationaldb/badge.svg?branch=master&service=github)](https://coveralls.io/github/holidayextras/jsonapi-store-relationaldb?branch=master)
-[![Build Status](https://travis-ci.org/holidayextras/jsonapi-store-relationaldb.svg?branch=master)](https://travis-ci.org/holidayextras/jsonapi-store-relationaldb)
+[![Coverage Status](https://coveralls.io/repos/championswimmer/jsonapi-store-sequelize/badge.svg?branch=master&service=github)](https://coveralls.io/github/championswimmer/jsonapi-store-sequelize?branch=master)
+[![Build Status](https://travis-ci.org/championswimmer/jsonapi-store-sequelize.svg?branch=master)](https://travis-ci.org/championswimmer/jsonapi-store-sequelize)
 [![npm version](https://badge.fury.io/js/jsonapi-store-relationaldb.svg)](http://badge.fury.io/js/jsonapi-store-relationaldb)
-[![Code Climate](https://codeclimate.com/github/holidayextras/jsonapi-store-relationaldb/badges/gpa.svg)](https://codeclimate.com/github/holidayextras/jsonapi-store-relationaldb)
-[![Dependencies Status](https://david-dm.org/holidayextras/jsonapi-store-relationaldb.svg)](https://david-dm.org/holidayextras/jsonapi-store-relationaldb)
+[![Code Climate](https://codeclimate.com/github/championswimmer/jsonapi-store-sequelize/badges/gpa.svg)](https://codeclimate.com/github/championswimmer/jsonapi-store-sequelize)
+[![Dependencies Status](https://david-dm.org/championswimmer/jsonapi-store-sequelize.svg)](https://david-dm.org/championswimmer/jsonapi-store-sequelize)
 
 
-# jsonapi-store-relationaldb
+# jsonapi-store-sequelize
 
-`jsonapi-store-relationaldb` is a relational database backed data store for [`jsonapi-server`](https://github.com/holidayextras/jsonapi-server).
+`jsonapi-store-sequelize` is a relational database backed data store for [`jsonapi-server`](https://github.com/holidayextras/jsonapi-server).
+This is based on (and forked from) [`jsonapi-store-relationaldb`](https://github.com/holidayextras/jsonapi-store-relationaldb)
 
 This project conforms to the specification laid out in the [jsonapi-server handler documentation](https://github.com/holidayextras/jsonapi-server/blob/master/documentation/handlers.md).
 
 ### Supported Databases
 
- * Postgres
+ * Postgres (>= 9.4)
  * MySQL
  * MariaDB
  * SQLite
- * Microsoft SQL Server
+ * Microsoft SQL Server (not regularly tested)
 
 ### Usage
 
 ```javascript
-var RelationalDbStore = require("jsonapi-store-relationaldb");
+var SQLStore = require("jsonapi-store-sequelize");
 
 jsonApi.define({
   resource: "comments",
-  handlers: new RelationalDbStore({
+  handlers: new SQLStore({
     dialect: "mysql",
     host: "localhost",
     port: 3306,
@@ -54,7 +55,7 @@ Getting this data store to production isn't too bad...
 
 1. Bring up your relational database stack.
 2. Create the database(s).
-3. Create the database tables. You can call `(new RelationalDbStore()).populate()` to have this module attempt to create the require tables. If you enable debugging via `DEBUG=jsonApi:store:*` you'll see the create-table statements - you can target a local database, call populate(), grab the queries, review them and finally run them against your production stack manually.
+3. Create the database tables. You can call `(new SQLStore()).populate()` to have this module attempt to create the require tables. If you enable debugging via `DEBUG=jsonApi:store:*` you'll see the create-table statements - you can target a local database, call populate(), grab the queries, review them and finally run them against your production stack manually.
 3. Deploy your code.
 4. Celebrate.
 
@@ -69,7 +70,7 @@ want your Tables schemas to change according to the DAOs without having to
 manually write migrations
 
 ```js
-(new RelationalDbStore()).populate({force: true}, () => {
+(new SQLStore()).populate({force: true}, () => {
   //tables dropped and created
 })
 ```

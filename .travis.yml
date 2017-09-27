@@ -2,7 +2,6 @@ dist: trusty
 sudo: false
 language: node_js
 node_js:
-  - 4
   - 6
   - 8
 services:
@@ -11,5 +10,3 @@ services:
 addons:
   postgresql: "9.4"
 script: npm run ci
-notifications:
-  email: false
