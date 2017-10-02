@@ -18,7 +18,6 @@ This project conforms to the specification laid out in the [jsonapi-server handl
  * MySQL
  * MariaDB
  * SQLite
- * Microsoft SQL Server (not regularly tested)
 
 ### Usage
 
@@ -29,6 +28,9 @@ jsonApi.define({
   resource: "comments",
   handlers: new SQLStore({
     dialect: "mysql",
+    dialectOptions: {
+      supportBigNumbers: true
+    },
     host: "localhost",
     port: 3306,
     database: "jsonapi", // If not provided, defaults to the name of the resource
@@ -40,6 +42,24 @@ jsonApi.define({
 ```
 
 **Note:** the `logging` property controls the logging of the emitted SQL and can either be `false` (which will mean it will be captured by the internal debugging module under the namespace `jsonApi:store:relationaldb:sequelize`) or a user provided function (e.g. `console.log`) to which a string containing the information to be logged will be passed as the first argument.
+
+#### Alternative Usage - Provide Sequelize instance
+
+If you are already using sequelize or need to have access to the sequelize instance, you may provide an instance to the store to be used instead of having the store create a new instance from the given config.
+
+```javascript
+var RelationalDbStore = require("jsonapi-store-relationaldb");
+var Sequelize = require("Sequelize");
+
+var sequelize = new Sequelize("jsonapi", "root", null, {dialect: "mysql"});
+
+jsonApi.define({
+  resource: "comments",
+  handlers: new RelationalDbStore({
+    sequelize: sequelize
+  })
+});
+```
 
 ### Features
 
@@ -63,11 +83,7 @@ When deploying schema changes, you'll need to correct your database schema - dat
 
 When changing columns in a production database, a typical approach might be to create a new table that is a clone of the table in production, copy all data from the production table into the new table, run an ALTER-TABLE command on the new table to adjust the columns (this may take a while and will lock the table), then run a RENAME-TABLES to swap the production table out for the new one.
 
-NOTE: 
-When populating database tables, you can use the `force` config option to DROP and CREATE tables.
-This is helpful in development stage, when your data doesn't matter and you
-want your Tables schemas to change according to the DAOs without having to
-manually write migrations
+**Note:** When populating database tables, you can use the `force` config option to DROP and CREATE tables. This is helpful in development stage, when your data doesn't matter and you want your Tables schemas to change according to the DAOs without having to manually write migrations.
 
 ```js
 (new SQLStore()).populate({force: true}, () => {
