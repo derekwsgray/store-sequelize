@@ -1,6 +1,6 @@
 {
   "name": "jsonapi-store-sequelize",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "Relational data store for jsonapi-server with Sequelize",
   "keywords": [
     "json:api",
