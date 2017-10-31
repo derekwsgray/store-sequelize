@@ -1,5 +1,5 @@
 {
-  "name": "jsonapi-store-sequelize",
+  "name": "@coding-blocks/jsonapi-store-sequelize",
   "version": "4.0.1",
   "description": "Relational data store for jsonapi-server with Sequelize",
   "keywords": [
@@ -13,14 +13,20 @@
   ],
   "main": "lib/sqlHandler.js",
   "author": "Arnav Gupta",
+  "contributors": [
+    "Holiday Extras",
+    "Oliver Rumbelow",
+    "Pedro Romani",
+    "Coding Blocks"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/championswimmer/jsonapi-store-sequelize.git"
+    "url": "https://github.com/coding-blocks/jsonapi-store-sequelize.git"
   },
   "engines": {
-    "node": ">= 6",
-    "npm": ">= 4"
+    "node": ">= 8",
+    "npm": ">= 5"
   },
   "dependencies": {
     "async": "2.5.0",
