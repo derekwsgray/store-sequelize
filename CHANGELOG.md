@@ -1,3 +1,6 @@
+- 2017-11-01 - v4.0.2
+- 2017-11-01 - Use UUID for relations
+- 2017-11-01 - Forked to Coding Blocks
 - 2017-10-09 - v4.0.0
 - 2017-10-09 - Optimised Sequelize UUID column type for ids.
 - 2017-10-02 - v3.0.0
