@@ -22,7 +22,7 @@ var path = require('path')
 var base = path.join(__dirname, '../node_modules/@coding-blocks/jsonapi-server/test')
 fs.readdirSync(base).forEach(function (filename) {
   var filePath = path.join(base, filename)
-  if (!fs.lstatSync(filePath).isDirectory()) {
+  if (!fs.lstatSync(filePath).isDirectory() && filePath.endsWith('js')) {
     require(filePath)
   }
 })
