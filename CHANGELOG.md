@@ -1,3 +1,5 @@
+- 2017-11-01 - v4.1.1
+- 2017-11-01 - fixed autoincrement in postgresql
 - 2017-11-01 - v4.0.4
 - 2017-11-01 - use codingblocks' jsonapi-server
 - 2017-11-01 - v4.0.2
