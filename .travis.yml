@@ -12,8 +12,7 @@ install:
   - npm install -g nyc
 addons:
   postgresql: "9.4"
-script: npm run ci
+script: "nyc npm test"
 after_success:
-  - "nyc npm test"
   - "nyc report --reporter=text-lcov > coverage.lcov"
   - "bash <(curl -s https://codecov.io/bash)"
