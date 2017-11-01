@@ -11,4 +11,4 @@ install: npm install -D
 addons:
   postgresql: "9.4"
 script: npm run ci
-after_success: npm run codecov
+after_success: npm run coveralls
