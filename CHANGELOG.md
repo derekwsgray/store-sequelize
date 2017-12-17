@@ -1,3 +1,7 @@
+- 2017-12-12 - v5.0.0
+- 2017-12-12 - Support latest version of `jsonapi-server` with store managed id support.
+- 2017-12-12 - Revert column type for `string` properties back to `string` from `text`.
+- 2017-12-12 - Remove support for Node.js 4.
 - 2017-11-01 - v4.1.1
 - 2017-11-01 - fixed autoincrement in postgresql
 - 2017-11-01 - v4.0.4
