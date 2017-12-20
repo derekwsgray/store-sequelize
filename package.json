@@ -38,7 +38,7 @@
     "sequelize": "4.28.0"
   },
   "devDependencies": {
-    "@coding-blocks/jsonapi-server": "^5.1.2",
+    "@coding-blocks/jsonapi-server": "^5.2.0",
     "blanket": "1.2.3",
     "codecov": "^3.0.0",
     "coveralls": "3.0.0",
@@ -63,6 +63,7 @@
     "v8-profiler": "5.7.0"
   },
   "scripts": {
+    "cleardb": "bash -c './setupDatabase.sh jsonapi-relationaldb-test $SEQUELIZE_DIALECT'",
     "test": "bash -c './setupDatabase.sh jsonapi-relationaldb-test $SEQUELIZE_DIALECT && mocha --exit --timeout 20000 -R spec ./test/*.js'",
     "start": "node example/server.js",
     "coveralls": "mocha --exit --require blanket --reporter mocha-lcov-reporter ./test/*.js | ./node_modules/coveralls/bin/coveralls.js",
