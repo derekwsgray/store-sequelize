@@ -38,7 +38,7 @@
     "sequelize": "4.28.0"
   },
   "devDependencies": {
-    "@coding-blocks/jsonapi-server": "^5.1.1",
+    "@coding-blocks/jsonapi-server": "^5.1.2",
     "blanket": "1.2.3",
     "codecov": "^3.0.0",
     "coveralls": "3.0.0",
