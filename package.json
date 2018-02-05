@@ -1,6 +1,6 @@
 {
   "name": "@coding-blocks/jsonapi-store-sequelize",
-  "version": "5.2.2",
+  "version": "5.2.3",
   "description": "Relational data store for jsonapi-server with Sequelize",
   "keywords": [
     "json:api",
