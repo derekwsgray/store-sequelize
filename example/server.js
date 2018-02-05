@@ -8,7 +8,7 @@ var instances = [ ]
 var DATABASE = 'jsonapi-relationaldb'
 
 // Replace the MemoryStore default handler with our own version
-require('jsonapi-server/lib/MemoryHandler')
+require('jagapi/lib/MemoryHandler')
 module.children[3].exports = function () {
   var dbStore = new JsonapiStoreRelationalDb(config(DATABASE))
   // Keep the handler around for after the test rig is live
@@ -16,12 +16,12 @@ module.children[3].exports = function () {
   return dbStore
 }
 
-var jsonApiTestServer = require('jsonapi-server/example/server.js')
+var jsonApiTestServer = require('jagapi/example/server.js')
 jsonApiTestServer.start()
 
 // MySQL doesn't differentiate between undefined and null.
 // Tweak the created field to allow null fields to pass Joi validation.
-var articles = require('jsonapi-server')._resources.articles
+var articles = require('jagapi')._resources.articles
 articles.attributes.created = articles.attributes.created.allow(null)
 articles.onCreate.created = articles.onCreate.created.allow(null)
 

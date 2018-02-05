@@ -5,12 +5,12 @@
 [![Dependencies Status](https://david-dm.org/coding-blocks/jsonapi-store-sequelize.svg)](https://david-dm.org/coding-blocks/jsonapi-store-sequelize)
 
 
-# jsonapi-store-sequelize
+# jagapi-sequelize
 
-`jsonapi-store-sequelize` is a relational database backed data store for [`jsonapi-server`](https://github.com/holidayextras/jsonapi-server).
+`jagapi-sequelize` is a relational database backed data store for [`jagapi`](https://github.com/coding-blocks/jsonapi-server).
 This is based on (and forked from) [`jsonapi-store-relationaldb`](https://github.com/holidayextras/jsonapi-store-relationaldb)
 
-This project conforms to the specification laid out in the [jsonapi-server handler documentation](https://github.com/holidayextras/jsonapi-server/blob/master/documentation/handlers.md).
+This project conforms to the specification laid out in the [jagapi handler documentation](https://github.com/coding-blocks/jsonapi-server/blob/master/documentation/handlers.md).
 
 ### Supported Databases
 
@@ -22,7 +22,7 @@ This project conforms to the specification laid out in the [jsonapi-server handl
 ### Usage
 
 ```javascript
-var SQLStore = require("jsonapi-store-sequelize");
+var SQLStore = require("jagapi-sequelize");
 
 jsonApi.define({
   resource: "comments",
@@ -48,14 +48,14 @@ jsonApi.define({
 If you are already using sequelize or need to have access to the sequelize instance, you may provide an instance to the store to be used instead of having the store create a new instance from the given config.
 
 ```javascript
-var RelationalDbStore = require("jsonapi-store-relationaldb");
-var Sequelize = require("Sequelize");
+var SQLStore = require("jagapi-sequelize");
+var Sequelize = require("sequelize");
 
 var sequelize = new Sequelize("jsonapi", "root", null, {dialect: "mysql"});
 
 jsonApi.define({
   resource: "comments",
-  handlers: new RelationalDbStore({
+  handlers: new SQLStore({
     sequelize: sequelize
   })
 });

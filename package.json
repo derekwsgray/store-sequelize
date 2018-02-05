@@ -1,7 +1,7 @@
 {
-  "name": "@coding-blocks/jsonapi-store-sequelize",
+  "name": "jagapi-sequelize",
   "version": "5.2.3",
-  "description": "Relational data store for jsonapi-server with Sequelize",
+  "description": "Relational data store for jagapi with Sequelize",
   "keywords": [
     "json:api",
     "jsonapi",
@@ -25,9 +25,9 @@
     "url": "https://github.com/coding-blocks/jsonapi-store-sequelize.git"
   },
   "engines": {
-    "node": ">= 8",
-    "npm": ">= 5",
-    "yarn": ">= 1"
+    "node": "8",
+    "npm": "5",
+    "yarn": "1"
   },
   "dependencies": {
     "async": "2.6.0",
@@ -38,7 +38,7 @@
     "sequelize": "4.28.0"
   },
   "devDependencies": {
-    "@coding-blocks/jsonapi-server": "^5.4.4",
+    "jagapi": "^5.4.4",
     "blanket": "1.2.3",
     "codecov": "^3.0.0",
     "coveralls": "3.0.0",
