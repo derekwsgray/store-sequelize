@@ -12,6 +12,7 @@
     "mssql"
   ],
   "main": "lib/sqlHandler.js",
+  "types": "types/sqlHanlder.d.ts",
   "author": "Arnav Gupta <arnav@codingblocks.com>",
   "contributors": [
     "Holiday Extras",
@@ -30,6 +31,7 @@
     "yarn": "1"
   },
   "dependencies": {
+    "@types/sequelize": "^4.27.4",
     "async": "2.6.0",
     "debug": "3.1.0",
     "joi": "^13.1.1",
@@ -38,7 +40,6 @@
     "sequelize": "4.28.0"
   },
   "devDependencies": {
-    "jagapi": "^5.4.4",
     "blanket": "1.2.3",
     "codecov": "^3.0.0",
     "coveralls": "3.0.0",
@@ -49,6 +50,7 @@
     "eslint-plugin-node": "5.2.1",
     "eslint-plugin-promise": "3.6.0",
     "eslint-plugin-standard": "3.0.1",
+    "jagapi": "^5.4.6",
     "lokka": "1.7.0",
     "lokka-transport-http": "1.6.1",
     "mocha": "4.0.1",
