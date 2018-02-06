@@ -5,8 +5,8 @@ declare class SqlStoreError extends Error {
   constructor(properties: any)
 }
 
-interface SqlConfig {
-
+interface ConfigOptions {
+  sequelize: Sequelize.Sequelize
 }
 
 interface PopulateCallback {
@@ -14,7 +14,7 @@ interface PopulateCallback {
 }
 
 declare class SqlStore extends Handler {
-  constructor(config: SqlConfig)
+  constructor(config: Sequelize.Options | ConfigOptions)
   populate: (options: Sequelize.SyncOptions | PopulateCallback, cb?: PopulateCallback) => any
 }
 
