@@ -12,7 +12,7 @@
     "mssql"
   ],
   "main": "lib/sqlHandler.js",
-  "types": "types/sqlHanlder.d.ts",
+  "types": "types/sqlHandler.d.ts",
   "author": "Arnav Gupta <arnav@codingblocks.com>",
   "contributors": [
     "Holiday Extras",
