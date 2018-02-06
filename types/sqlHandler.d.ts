@@ -15,8 +15,7 @@ interface PopulateCallback {
 
 declare class SqlStore extends Handler {
   constructor(config: SqlConfig)
-  populate: (options: Sequelize.SyncOptions, cb: PopulateCallback) => any
-  populate: (cb: PopulateCallback) => any
+  populate: (options: Sequelize.SyncOptions | PopulateCallback, cb?: PopulateCallback) => any
 }
 
 export = SqlStore

@@ -50,7 +50,7 @@
     "eslint-plugin-node": "5.2.1",
     "eslint-plugin-promise": "3.6.0",
     "eslint-plugin-standard": "3.0.1",
-    "jagapi": "^5.4.6",
+    "jagapi": "^5.4.9",
     "lokka": "1.7.0",
     "lokka-transport-http": "1.6.1",
     "mocha": "4.0.1",
