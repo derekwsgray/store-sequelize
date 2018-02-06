@@ -1,6 +1,6 @@
 {
   "name": "jagapi-sequelize",
-  "version": "5.4.0",
+  "version": "5.4.1",
   "description": "Relational data store for jagapi with Sequelize",
   "keywords": [
     "json:api",
