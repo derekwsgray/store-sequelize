@@ -1,8 +1,8 @@
-[![codecov](https://codecov.io/gh/coding-blocks/jsonapi-store-sequelize/branch/master/graph/badge.svg)](https://codecov.io/gh/coding-blocks/jsonapi-store-sequelize)
-[![Build Status](https://travis-ci.org/coding-blocks/jsonapi-store-sequelize.svg?branch=master)](https://travis-ci.org/coding-blocks/jsonapi-store-sequelize)
+[![codecov](https://codecov.io/gh/jagql/store-sequelize/branch/master/graph/badge.svg)](https://codecov.io/gh/jagql/store-sequelize)
+[![Build Status](https://travis-ci.org/jagql/store-sequelize.svg?branch=master)](https://travis-ci.org/jagql/store-sequelize)
 [![npm version](https://badge.fury.io/js/%40coding-blocks%2Fjsonapi-store-sequelize.svg)](https://badge.fury.io/js/%40coding-blocks%2Fjsonapi-store-sequelize)
-[![Code Climate](https://codeclimate.com/github/coding-blocks/jsonapi-store-sequelize/badges/gpa.svg)](https://codeclimate.com/github/coding-blocks/jsonapi-store-sequelize)
-[![Dependencies Status](https://david-dm.org/coding-blocks/jsonapi-store-sequelize.svg)](https://david-dm.org/coding-blocks/jsonapi-store-sequelize)
+[![Code Climate](https://codeclimate.com/github/jagql/store-sequelize/badges/gpa.svg)](https://codeclimate.com/github/jagql/store-sequelize)
+[![Dependencies Status](https://david-dm.org/jagql/store-sequelize.svg)](https://david-dm.org/jagql/store-sequelize)
 
 
 # jagapi-sequelize
