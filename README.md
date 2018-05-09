@@ -5,12 +5,12 @@
 [![Dependencies Status](https://david-dm.org/jagql/store-sequelize.svg)](https://david-dm.org/jagql/store-sequelize)
 
 
-# jagapi-sequelize
+# @jagql/store-sequelize
 
-`jagapi-sequelize` is a relational database backed data store for [`jagapi`](https://github.com/coding-blocks/jsonapi-server).
+` @jagql/store-sequelize` is a relational database backed data store for [`jagql`](https://github.com/jagql/framework).
 This is based on (and forked from) [`jsonapi-store-relationaldb`](https://github.com/holidayextras/jsonapi-store-relationaldb)
 
-This project conforms to the specification laid out in the [jagapi handler documentation](https://github.com/coding-blocks/jsonapi-server/blob/master/documentation/handlers.md).
+This project conforms to the specification laid out in the [jagql handler documentation](https://github.com/coding-blocks/jsonapi-server/blob/master/documentation/handlers.md).
 
 ### Supported Databases
 
@@ -22,7 +22,7 @@ This project conforms to the specification laid out in the [jagapi handler docum
 ### Usage
 
 ```javascript
-var SQLStore = require("jagapi-sequelize");
+var SQLStore = require("@jagql/store-sequelize");
 
 jsonApi.define({
   resource: "comments",
@@ -48,7 +48,7 @@ jsonApi.define({
 If you are already using sequelize or need to have access to the sequelize instance, you may provide an instance to the store to be used instead of having the store create a new instance from the given config.
 
 ```javascript
-var SQLStore = require("jagapi-sequelize");
+var SQLStore = require("@jagql/store-sequelize");
 var Sequelize = require("sequelize");
 
 var sequelize = new Sequelize("jsonapi", "root", null, {dialect: "mysql"});
