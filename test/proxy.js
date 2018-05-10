@@ -8,7 +8,7 @@ var instances = [ ]
 var DATABASE = 'jsonapi-relationaldb-test'
 
 // Replace the MemoryStore default handler with our own version
-require('@jagql/framework/lib/MemoryHandler')
+require('@jagql/framework/lib/handlers/MemoryHandler')
 module.children[3].exports = function () {
   var dbStore = new JsonapiStoreRelationalDb(config(DATABASE))
   // Keep the handler around for after the test rig is live
