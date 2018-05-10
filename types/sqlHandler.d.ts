@@ -1,5 +1,5 @@
 import Sequelize = require('sequelize')
-import {Handler} from 'jagapi'
+import {Handler} from '@jagql/framework'
 
 declare class SqlStoreError extends Error {
   constructor(properties: any)
