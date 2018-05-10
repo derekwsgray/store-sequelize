@@ -1,6 +1,6 @@
 {
   "name": "@jagql/store-sequelize",
-  "version": "5.6.0",
+  "version": "5.6.1-0",
   "description": "Relational data store for jagql with Sequelize",
   "keywords": [
     "json:api",
