@@ -7,6 +7,8 @@
 
 # @jagql/store-sequelize
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/jagql/store-sequelize.svg)](https://greenkeeper.io/)
+
 ` @jagql/store-sequelize` is a relational database backed data store for [`jagql`](https://github.com/jagql/framework).
 This is based on (and forked from) [`jsonapi-store-relationaldb`](https://github.com/holidayextras/jsonapi-store-relationaldb)
 
