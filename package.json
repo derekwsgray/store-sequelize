@@ -68,7 +68,7 @@
   "scripts": {
     "cleardb": "bash -c './setupDatabase.sh jsonapi-relationaldb-test $SEQUELIZE_DIALECT'",
     "pretest": "bash -c './setupDatabase.sh jsonapi-relationaldb-test $SEQUELIZE_DIALECT'",
-    "test": "mocha --exit --timeout 20000 -R spec ./test/*.js'",
+    "test": "mocha --exit --timeout 20000 -R spec ./test/*.js",
     "start": "node example/server.js",
     "coveralls": "mocha --exit --require blanket --reporter mocha-lcov-reporter ./test/*.js | ./node_modules/coveralls/bin/coveralls.js",
     "coverage": "mocha --exit --timeout 20000 --require blanket --reporter html-cov ./test/*.js > coverage.html || true",
