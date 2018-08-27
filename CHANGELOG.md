@@ -1,3 +1,15 @@
+# CHANGELOG
+
+- 2018-08-27 - v5.6.9
+- 2018-08-27 - use max and length property of Joi for Sequelize columns
+- 2018-01-30 - fix id based filtering
+- 2018-01-27 - this handler handles sort and filter internally
+- 2017-12-20 - save autoincrement relationships as integer (was string earlier)
+
+-----------------------
+     FORK
+-----------------------
+
 - 2017-12-12 - v5.0.0
 - 2017-12-12 - Support latest version of `jsonapi-server` with store managed id support.
 - 2017-12-12 - Revert column type for `string` properties back to `string` from `text`.
