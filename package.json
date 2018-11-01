@@ -31,16 +31,16 @@
     "yarn": "1"
   },
   "dependencies": {
-    "@types/sequelize": "^4.27.4",
+    "@types/sequelize": "4.27.30",
     "async": "2.6.1",
-    "debug": "3.1.0",
-    "joi": "^13.1.1",
-    "lodash": "4.17.10",
-    "semver": "5.5.1",
+    "debug": "4.1.0",
+    "joi": "^14.0.3",
+    "lodash": "^4.17.11",
+    "semver": "^5.6.0",
     "sequelize": "4.38.0"
   },
   "devDependencies": {
-    "@jagql/framework": "^5.6.5",
+    "@jagql/framework": "5.6.13",
     "blanket": "1.2.3",
     "codecov": "^3.0.0",
     "coveralls": "3.0.1",
@@ -58,7 +58,7 @@
     "mocha-performance": "0.1.1",
     "mysql2": "1.6.0",
     "nyc": "^12.0.1",
-    "pg": "^7.4.3",
+    "pg": "7.6.0",
     "pg-hstore": "2.3.2",
     "plato": "1.7.0",
     "sqlite3": "4.0.2",
