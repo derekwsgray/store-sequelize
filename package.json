@@ -26,9 +26,9 @@
     "url": "https://github.com/coding-blocks/jsonapi-store-sequelize.git"
   },
   "engines": {
-    "node": "8",
-    "npm": "5",
-    "yarn": "1"
+    "node": ">=8",
+    "npm": ">=5",
+    "yarn": ">=1"
   },
   "dependencies": {
     "@types/sequelize": "4.27.30",
