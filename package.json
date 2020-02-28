@@ -1,6 +1,6 @@
 {
   "name": "@jagql/store-sequelize",
-  "version": "5.6.9",
+  "version": "5.6.11",
   "description": "Relational data store for jagql with Sequelize",
   "keywords": [
     "json:api",
@@ -26,21 +26,21 @@
     "url": "https://github.com/coding-blocks/jsonapi-store-sequelize.git"
   },
   "engines": {
-    "node": "8",
-    "npm": "5",
-    "yarn": "1"
+    "node": ">=8",
+    "npm": ">=5",
+    "yarn": ">=1"
   },
   "dependencies": {
-    "@types/sequelize": "^4.27.4",
+    "@types/sequelize": "4.27.32",
     "async": "2.6.1",
-    "debug": "3.2.1",
-    "joi": "^13.1.1",
+    "debug": "4.1.0",
+    "joi": "14.0.4",
     "lodash": "4.17.11",
-    "semver": "5.5.1",
-    "sequelize": "4.38.1"
+    "semver": "5.6.0",
+    "sequelize": "4.41.1"
   },
   "devDependencies": {
-    "@jagql/framework": "^5.6.5",
+    "@jagql/framework": "5.6.13",
     "blanket": "1.2.3",
     "codecov": "^3.0.0",
     "coveralls": "3.0.1",
@@ -56,12 +56,12 @@
     "mocha": "5.2.0",
     "mocha-lcov-reporter": "1.3.0",
     "mocha-performance": "0.1.1",
-    "mysql2": "1.6.0",
+    "mysql2": "1.6.2",
     "nyc": "^12.0.1",
-    "pg": "^7.4.3",
+    "pg": "7.6.1",
     "pg-hstore": "2.3.2",
     "plato": "1.7.0",
-    "sqlite3": "4.0.2",
+    "sqlite3": "4.0.4",
     "swagger-tools": "^0.10.3",
     "v8-profiler": "5.7.0"
   },
