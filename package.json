@@ -37,7 +37,7 @@
     "joi": "14.0.4",
     "lodash": "4.17.11",
     "semver": "5.6.0",
-    "sequelize": "https://github.com/derekwsgray/sequelize#00586834f1f0a0e11220166bcb74f1c1c1d7a122"
+    "sequelize": "https://github.com/derekwsgray/sequelize#v5"
   },
   "devDependencies": {
     "@jagql/framework": "5.6.13",
